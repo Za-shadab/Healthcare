@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.header-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2%; */
+    height: 12vh;
+    width: 100%;
+}
+
+
+
+
+.logocontainer{
+    width: 15%;
+    height: 100%;
+    background-color: #F6FAFF;
+    display: flex;
+    align-items: center;
+    padding-top: 5vh;
+    padding-left: 3vw;
+    
+}
+.logo{
+    color: #1DD7E4;
+    font-family: "Ancizar Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.logo-care{
+    color : #25136c;
+    font-family: "Ancizar Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+
+.search-wrapper{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 5vh;
+    padding-left: 4vw;
+    background-color: #FFFFFF;
+}
+.search{
+    width: 35vw;
+    height: 5vh;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    border-radius: 9px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.search-input{
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: 0px;
+    padding: 10px;
+    height: 100%;
+}
+.search-input::placeholder{
+    font-size: 14px;
+}
+.bellcontainer{
+    width: 3vw;
+    height: 5vh;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+
+
+.profilecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 40%;
+    height: 100%;
+    background-color: #F6FAFF;
+    padding-top: 5vh;
+    padding-right: 2vw;
+}
+.imgcontainer{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.6rem;
+    background-color: #1DD7E4;
+    overflow: hidden;
+    padding: 0.7rem;
+}
+.imgcontainer img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+.addcontainer{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #3633A6;
+    color: #FFFFFF;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+@media (min-width:300px) and (max-width:900px) {
+    .logo,.logo-care{
+        font-size: 1.5rem;
+    }
+    .search-wrapper{
+        display: none;
+    }
+    .logocontainer{
+        width: 100%;
+    }
+    .header-wrapper{
+        height: 20%;
+        justify-content: space-between;
+        padding: 0vw 2vw;
+    }
+}

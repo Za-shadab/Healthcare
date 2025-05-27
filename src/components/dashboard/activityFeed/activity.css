@@ -1,0 +1,120 @@
+.activitywrapper{
+    width:39vw; 
+    height: 27vh;
+    background-color: #F6FAFF; 
+    border-radius:22px;
+    padding: 0.5vw 0.5vw;
+}
+.activityheading{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vw 1.5vw;
+}
+
+
+
+.barcontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5vw 2vw;
+}
+.bardivscontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.bardivs{
+    width: calc(100% / 7);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vw;
+}
+.dayscontainer{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2vw;
+    font-weight: 500;
+    color: #c2c3c7;
+}
+
+/* individual bars styling */
+.fullbar{
+    height: 80%;
+    width: 0.3vw;
+    border-radius: 8px;
+}
+.halfbar{
+    height: 50%;
+    width: 0.3vw;
+    border-radius: 8px;
+    margin-top: 0.5vw;
+}
+.smallmidpartbar{
+    position: relative;
+    height: 40%;
+    width: 0.3vw;
+    border-radius: 8px;
+    margin-top: 2.5vw;
+}
+.smallmidpartbar::after,.fullmidpartbar::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 48%;
+    width: 0.3vw;
+    border-radius: 8px;
+    background-color: var(--after-bg);
+    margin-bottom: 0.1vh;
+}
+.smallmidpartbar::before,.fullmidpartbar::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    height: 48%;
+    width: 0.3vw;
+    border-radius: 8px;
+    background-color: var(--before-bg);
+}
+.fullmidpartbar{
+    position: relative;
+    height: 80%;
+    width: 0.3vw;
+    border-radius: 8px;
+}
+.smallbar{
+    height: 25%;
+    width: 0.3vw;
+    border-radius: 8px;
+    margin-top: 4.2vw;
+}
+
+
+@media (min-width:300px) and (max-width:700px) {
+    .activitywrapper{
+        width: 100vw;
+    }
+    .bardivs{
+        gap: 1vw;
+    }
+    .fullbar,.halfbar,.smallbar,.smallmidpartbar,.fullmidpartbar,.smallmidpartbar::after,.fullmidpartbar::after,.smallmidpartbar::before,.fullmidpartbar::before{
+        width: 1.2vw;
+        border-radius: 8px;
+    }
+    .halfbar{
+        margin-top: 1vh;
+    }
+    .smallmidpartbar{
+        margin-top: 4vh;
+    }
+    .smallbar{
+        margin-top: 9vh;
+    }
+}
