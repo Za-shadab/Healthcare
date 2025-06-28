@@ -1,6 +1,22 @@
+:root{
+    --x: 50%,
+    --y: 50%,
+}
+
+.humangrid{
+    height: 60vh;
+    width: 21vw;
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+
+
 .humancontainer{
     /* width: 20vw; */
-    height: 60vh;
+    /* height: 60vh; */
+    grid-area: 1/1/20/20;
     border-radius: 2rem;
     background-color: #F6FAFF;
     display: flex;
@@ -18,14 +34,23 @@
 
 
 .sacnnerwrapper{
-   position: relative;
+   /* position: relative;
    bottom: 46.5vh;
-   left: 10.3vw;
+   left: 10.3vw; */
+   grid-area: 5/11/7/14;
+   opacity: 0;
+   z-index: 10;
+   transition: 0.3s all ease;
+   /* background-color: red; */
 }
 .second{
-    bottom: 26vh;
-    left: 7.4vw;
+    grid-area: 13/8/15/11;
+    /* background-color: red; */
 }
+.first:hover, .second:hover{
+    opacity: 1;
+}
+
 .scannercontainer{
     position: relative;
     width: 2.5rem;
@@ -79,13 +104,22 @@
 
 
 
-
+.inActive{
+    opacity: 0;
+}
+.active{
+    opacity: 1;
+}
 .anatomy-indicator{
     height: 4.5vh;
     width: 8vw;
     position: absolute;
-    top: 32.5vh;
-    left: 31.5vw;
+    /* top: 31.5vh;
+    left: 30.5vw; */
+    /* top: var(--y);
+    left: var(--x); */
+    /* grid-area: 5/8/7/1; */
+    /* grid-area: 5/17/7/20; */
     background-color: #3633A6;
     padding: 2px 10px;
     border-radius: 9px;
@@ -97,10 +131,12 @@
     align-items: center;
     gap: 0.4rem;
     font-size: 0.8rem;
+    /* transition: .5s all ease; */
 }
 .secondorgan{
-    top: 59vh;
-    left: 15.2vw;
+    /* top: 56vh;
+    left: 14.5vw; */
+    /* grid-area: 13/1/15/10; */
     background-color: #1DD7E4;
 }
 .anatomy-indicator img{
@@ -167,10 +203,19 @@
 
 
 
-@media (min-width:300px) and (max-width:900px) {
-    .humancontainer{
+@media (min-width:300px) and (max-width:500px) {
+    .humangrid{
         width: 90%;
         margin-left: 3vw;
+    }
+}
+
+@media (min-width:501px) and (max-width:700px){
+    .humangrid{
+        width: 70%;
+    }
+    .healthindicatorwrapper{
+        width: 30%;
     }
 }
 
@@ -216,12 +261,18 @@
     }
 }
 
-@media (min-width:299px) and (max-width:1149px) {
+@media (min-width:700px) and (max-width:1149px) {
     .healthindicatorwrapper{
         display: none;
     }
     .sacnnerwrapper{
         right: auto;
+    }
+}
+
+@media (max-width: 500px){
+    .healthindicatorwrapper{
+        display: none;
     }
 }
 

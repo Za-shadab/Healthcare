@@ -11,12 +11,12 @@ function ActivityFeed({activitydata}){
             <div className='barcontainer'>
                 <div className='bardivscontainer'>
                     {
-                    activitydata.map((separatedivs)=>(
-                        <div className='bardivs'>
+                    activitydata.map((separatedivs, i)=>(
+                        <div className='bardivs' key={i}>
                             {
                                 separatedivs.bars.map((bar, barindex)=>(
                                     <div
-                                        key={barindex}
+                                        key={barindex+1}
                                         className={`bars ${bar.type}`}
                                         style={{backgroundColor: (bar.type !== 'smallmidpartbar' && bar.type !== 'fullmidpartbar' && bar.bgcolor), ...(bar.bgcolor === '' && {'--after-bg':'#1DD7E4', '--before-bg': '#3734A7'}), ...(bar.grey && {'--after-bg':'#E2E5ED', '--before-bg': '#E2E5ED'})}}
                                     >
@@ -29,8 +29,8 @@ function ActivityFeed({activitydata}){
                 </div>
                 <div className='dayscontainer'>
                 {
-                    activitydata.map((eachday)=>(
-                        eachday.day!=='' && <div>
+                    activitydata.map((eachday, i)=>(
+                        eachday.day!=='' && <div key={i}>
                             {eachday.day}
                         </div>
                     ))

@@ -24,12 +24,14 @@ function hasconsectiveAppointment(calendardata, item, dayindex, timeindex){
 }
 
 function CalendarView({calendardata, appointmentdata, thursdayappointment, saturdayappointment}){
+    const date = new Date()
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
     return(
         <div className="calendarviewwrapper">
             <div className="calendarcontainer">
                 <div className="calendarheading">
-                    <span>October 2021</span>
+                    <span>{months[date.getMonth()]} {date.getFullYear()}</span>
                     <span>
                         <Arrowleft/>
                         <Arrowright style={{marginLeft:'10px'}}/>

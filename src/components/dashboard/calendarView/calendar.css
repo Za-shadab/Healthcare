@@ -37,6 +37,11 @@
     padding: 0.5vw;
     border-radius: 22px;
     text-align: center;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+.days:hover{
+    background-color: #ECF3FE;
 }
 .appttime{
     display: flex;

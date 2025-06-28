@@ -32,4 +32,7 @@
     gap: 2vh;
     overflow-y: hidden;
 }
-
+.list:hover{
+    cursor: pointer;
+    color: #3633A6;
+}
