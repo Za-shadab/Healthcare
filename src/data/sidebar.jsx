@@ -13,23 +13,28 @@ export const Sidebardata = [
         items : [
                 {
                     title : 'Dashboard',
-                    icon : <DashboardIcon size={24}/>
+                    icon : <DashboardIcon size={24}/>,
+                    path: '/dashboard'
                 },
                 {
                     title: 'History',
-                    icon: <HistoryIcon size={48}/>
+                    icon: <HistoryIcon size={48}/>,
+                    path: '/history'
                 },
                 {
                     title: 'Calendar',
-                    icon: <CalendarIcon/>
+                    icon: <CalendarIcon/>,
+                    path: '/calendar'
                 },
                 {
                     title: 'Appointments',
-                    icon: <AppointmentIcon/>
+                    icon: <AppointmentIcon/>,
+                    path: '/appointments'
                 },
                 {
                     title: 'Statistics',
-                    icon: <StatsIcon/>
+                    icon: <StatsIcon/>,
+                    path: '/statistics'
                 },
         ]
     },

@@ -1,6 +1,7 @@
 .sidebar-wrapper{
     width: 100%;
     height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .sidebar-container{
     padding-left: 3vw;
@@ -9,7 +10,7 @@
     justify-content: space-evenly;
 }
 .sidebar-container:last-child{
-    margin-top: 25vh;
+    margin-top: 15vh;
 }
 
 .sidebar-headings{

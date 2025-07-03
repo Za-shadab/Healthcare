@@ -27,7 +27,7 @@ function HealthStatusCards({healthcarddata}) {
                     })
                 }
                 <div className="details">
-                    <p>Details <ArrowRight size={14} className='arrow-para'/></p>
+                    <p style={{display:'flex', justifyContent:'flex-end', alignItems:'center', gap:'4px'}}>Details <ArrowRight size={14} className='arrow-para'/></p>
                 </div>
             </div>
         </div>

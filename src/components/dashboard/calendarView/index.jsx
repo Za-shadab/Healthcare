@@ -31,8 +31,8 @@ function CalendarView({calendardata, appointmentdata, thursdayappointment, satur
         <div className="calendarviewwrapper">
             <div className="calendarcontainer">
                 <div className="calendarheading">
-                    <span>{months[date.getMonth()]} {date.getFullYear()}</span>
-                    <span>
+                    <span style={{overflow:'hidden', display:'flex'}}>{months[date.getMonth()]} {date.getFullYear()}</span>
+                    <span style={{overflow:'hidden', display:'flex'}}>
                         <Arrowleft/>
                         <Arrowright style={{marginLeft:'10px'}}/>
                     </span>

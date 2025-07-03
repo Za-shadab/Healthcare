@@ -192,7 +192,7 @@
     background-color: #262b2b;
 }
 .details{
-    text-align: end;
+    /* text-align: end; */
     margin-top: 0.2rem;
     color: #3633A6;
     margin-right: 2rem;

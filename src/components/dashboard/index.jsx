@@ -16,7 +16,7 @@ function DashBoardMain() {
 
             <div className="componentwrapper">
             <div className="headingcontainer">
-                <h2>Dashboard</h2>
+                <h2 style={{fontSize:'1.5rem', fontWeight:'400'}}>Dashboard</h2>
                 <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
                     <span>This Week</span>
                     <ChevronDown color="#3633A6"/>

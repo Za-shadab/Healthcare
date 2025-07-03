@@ -1,7 +1,7 @@
 let date = new Date()
-const Days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thus', 'Fri', 'Sat']
+export const Days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thus', 'Fri', 'Sat']
 
-function addDays(date, days) {
+export function addDays(date, days) {
     const newDate = new Date(date);
     newDate.setDate(date.getDate() + days);
     return newDate;
